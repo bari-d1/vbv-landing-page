@@ -78,6 +78,20 @@
     margin-bottom: 32px;
   }
 
+  .mission-text {
+    color: var(--text-secondary);
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+
+  .mission-closing {
+    color: var(--accent);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+
   .btn {
     display: inline-block;
     width: 100%;
@@ -166,6 +180,57 @@
     font-size: 13px;
     color: var(--text-secondary);
     margin-top: 10px;
+  }
+
+  .rights-note {
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin-top: 24px;
+  }
+
+  /* Testimonials */
+  .quote-row {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 8px;
+    margin: 0 -24px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .quote-card {
+    flex: 0 0 auto;
+    width: 78vw;
+    max-width: 320px;
+    scroll-snap-align: start;
+    background: var(--bg-alt);
+    border-left: 4px solid var(--accent);
+    padding: 20px;
+  }
+
+  .quote-text {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+
+  .quote-attribution {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  .quote-attribution::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 1px;
+    background: var(--text-secondary);
   }
 
   /* Pricing */
@@ -310,6 +375,17 @@
   </div>
 </section>
 
+<section id="mission">
+  <div class="wrap">
+    <h2>A word is preached once. It's meant to reach further than that.</h2>
+    <p class="mission-text">Every Sunday, God speaks through a sermon prepared in prayer and delivered in faith. It lands in a room, does its work, and then it's gone, filed away in a camera nobody rewatches.</p>
+    <p class="mission-text">Meanwhile, the person who needed that exact word was scrolling somewhere else that morning.</p>
+    <p class="mission-text">Most churches are already doing the hard part, showing up, preparing, preaching faithfully every week. What's missing isn't effort, it's time. Turning that sermon into something that reaches beyond the building is one more task nobody has hours left for.</p>
+    <p class="mission-text">VBV Edits exists to close that gap. We take the word that was already preached and give it the second life it was meant to have, not because content needs to perform, but because someone still needs to hear it.</p>
+    <p class="mission-closing">That's the digital mission. We just help carry it.</p>
+  </div>
+</section>
+
 <section id="proof">
   <div class="wrap">
     <p class="label">What we've done so far</p>
@@ -372,11 +448,64 @@
         </video>
         <p class="clip-label">Sample clip 6</p>
       </div>
+      <div class="clip-card">
+        <video class="clip-video" controls preload="none" poster="videos/clip7.jpg">
+          <source src="videos/clip7.mp4" type="video/mp4">
+        </video>
+        <p class="clip-label">Sample clip 7</p>
+      </div>
+      <div class="clip-card">
+        <video class="clip-video" controls preload="none" poster="videos/clip8.jpg">
+          <source src="videos/clip8.mp4" type="video/mp4">
+        </video>
+        <p class="clip-label">Sample clip 8</p>
+      </div>
+      <div class="clip-card">
+        <video class="clip-video" controls preload="none" poster="videos/clip9.jpg">
+          <source src="videos/clip9.mp4" type="video/mp4">
+        </video>
+        <p class="clip-label">Sample clip 9</p>
+      </div>
+      <div class="clip-card">
+        <video class="clip-video" controls preload="none" poster="videos/clip10.jpg">
+          <source src="videos/clip10.mp4" type="video/mp4">
+        </video>
+        <p class="clip-label">Sample clip 10</p>
+      </div>
+      <div class="clip-card">
+        <video class="clip-video" controls preload="none" poster="videos/clip11.jpg">
+          <source src="videos/clip11.mp4" type="video/mp4">
+        </video>
+        <p class="clip-label">Sample clip 11</p>
+      </div>
     </div>
+    <p class="rights-note">These clips are excerpts from sermons produced for our clients. All rights to the original content belong to the respective churches.</p>
   </div>
 </section>
 
-<!-- testimonials section: add once we have real client quotes -->
+<section id="testimonials">
+  <div class="wrap">
+    <p class="label">What viewers are saying</p>
+    <div class="quote-row">
+      <div class="quote-card">
+        <p class="quote-text">"For the first time I learned everything is by scripture. Now hearing you say this makes me think deeply on words like 'The Lord said.' Thank you for pushing us to go back to what is written."</p>
+        <p class="quote-attribution">Instagram comment</p>
+      </div>
+      <div class="quote-card">
+        <p class="quote-text">"Those words! It will hurt but I will let go, Lord. I want your will and your will alone!"</p>
+        <p class="quote-attribution">Instagram comment</p>
+      </div>
+      <div class="quote-card">
+        <p class="quote-text">"Omg I was talking about doing better with my intimacy with God and this pops up. God is such a sweet lover and I love God back."</p>
+        <p class="quote-attribution">Instagram comment</p>
+      </div>
+      <div class="quote-card">
+        <p class="quote-text">"A specific word will take you farther than peace can. In the days that something comes for that peace, the word is what will keep you steadfast."</p>
+        <p class="quote-attribution">Instagram comment</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section id="pricing">
   <div class="wrap">
