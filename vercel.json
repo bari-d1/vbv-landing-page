@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/:slug", "destination": "https://vbv-dashboard.dayoadebari.com/offer/:slug" }
+  ]
+}
